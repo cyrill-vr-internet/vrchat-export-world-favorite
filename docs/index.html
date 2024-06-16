@@ -1,1 +1,44 @@
-test
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <title>VRChat World Favorite Export Assist</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="./convert.js"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<div class="content-wrapper">
+  <div class="content">
+    <h1>お気に入りワールド出力支援ツール</h1>
+    <ul>
+      <ol>VRChatにログインしてください <a href="https://vrchat.com/home">https://vrchat.com/home</a></ol>
+      <ol>お気に入り一覧のデータを取得します</ol>
+      <ol>
+        <div class="pure-g">
+          <div class="pure-u-1-4 world-link"><p><a href="https://vrchat.com/api/1/worlds/favorites?n=100&offset=0&tag=worlds1" target="_blank">&#x1f30f;world1</a></p></div>
+          <div class="pure-u-1-4 world-link"><p><a href="https://vrchat.com/api/1/worlds/favorites?n=100&offset=0&tag=worlds2" target="_blank">&#x1f30f;world2</a></p></div>
+          <div class="pure-u-1-4 world-link"><p><a href="https://vrchat.com/api/1/worlds/favorites?n=100&offset=0&tag=worlds3" target="_blank">&#x1f30f;world3</a></p></div>
+          <div class="pure-u-1-4 world-link"><p><a href="https://vrchat.com/api/1/worlds/favorites?n=100&offset=0&tag=worlds4" target="_blank">&#x1f30f;world4</a></p></div>
+        </div>
+      </ol>
+      <ol>フォームに張り付けて変換を押してください</ol>
+    </ul>
+    <form class="pure-form">
+      <fieldset>
+        <du>
+          <dl><textarea id="favorite-json" class="pure-textarea"></textarea></dl>
+          <dl>
+            <input type="button" class="pure-button pure-button-primary" value="変換" onclick="onClickConvert('favorite-json', 'favorite-tsv', 'copiedLog')">
+          </dl>
+          <dl><textarea id="favorite-tsv" class="pure-textarea"></textarea></dl>
+          <dl>
+            <input type="button" class="pure-button" value="コピー" onclick="onClickCopy('favorite-tsv', 'copiedLog')">
+          </dl>
+          <dl><div id="copiedLog"></div></dl>
+      </fieldset>
+    </form>
+  </div>
+</div>
+

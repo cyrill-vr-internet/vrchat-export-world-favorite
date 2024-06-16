@@ -1,0 +1,43 @@
+.content {
+    padding: 2em 2em 3em;
+}
+
+ul {
+    padding-inline-start: 1em;
+    padding: 0.25em;
+}
+
+ol {
+    padding-inline-start: 1em;
+    padding: 0.25em;
+}
+
+textarea {
+    font-size: 10px;
+    width: 1000px;
+    height: 200px;
+}
+
+input {
+    width: 1000px;
+}
+
+a {
+    color: blue;
+    text-decoration:none;
+}
+
+a:hover {
+    text-decoration:underline;
+}
+
+.world-link p {
+    text-align: center;
+    background-color: aliceblue;
+    border: solid 1px;
+    border-color: antiquewhite;
+    padding: 20px;
+}
+.world-link a {
+    padding: 20px;
+}
