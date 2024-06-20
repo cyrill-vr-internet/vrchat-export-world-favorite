@@ -51,10 +51,10 @@ a:hover {
     border: solid 1px;
     border-color: antiquewhite;
     width: 100%;
-    padding: 3%;
+    padding: 10px 3%;
 }
 
 .world-link a {
     text-align: center;
-    padding: 1%;
+    padding: 10px 3%;
 }
