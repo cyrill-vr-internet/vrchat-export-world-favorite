@@ -18,8 +18,12 @@ textarea {
     height: 200px;
 }
 
-input {
+input.action-button {
     width: 100%;
+}
+
+input#no-tags {
+    margin: 2px;
 }
 
 a {

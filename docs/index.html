@@ -39,14 +39,16 @@
     <form class="pure-form">
       <fieldset>
         <du>
+          <dl><label for="no-tags"><input type="checkbox" id="no-tags" value="1">タグ不要</label></dl>
           <dl><textarea id="favorite-json" class="pure-textarea"></textarea></dl>
           <dl>
-            <input type="button" class="pure-button pure-button-primary" value="変換"
-              onclick="onClickConvert('favorite-json', 'favorite-tsv', 'copiedLog')">
+            <input type="button" class="pure-button pure-button-primary action-button" value="変換"
+              onclick="onClickConvert('favorite-json', 'favorite-tsv', 'no-tags', 'copiedLog')">
           </dl>
           <dl><textarea id="favorite-tsv" class="pure-textarea"></textarea></dl>
           <dl>
-            <input type="button" class="pure-button" value="コピー" onclick="onClickCopy('favorite-tsv', 'copiedLog')">
+            <input type="button" class="pure-button action-button" value="コピー"
+              onclick="onClickCopy('favorite-tsv', 'copiedLog')">
           </dl>
           <dl>
             <div id="copiedLog"></div>
